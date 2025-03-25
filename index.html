@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Seeing the Abstract: Translating the Abstract Language for Vision Language Models.">
+  <meta name="keywords" content="Fashion, Vision-and-Language Models, Image Retrieval">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seeing the Abstract: Translating the Abstract Language for Vision Language Models</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Seeing the Abstract: Translating the Abstract Language for Vision Language Models</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://davidetalon.github.io/">Davide Talon</a><sup>*1</sup>,</span>
+            <span class="author-block">
+              <a href="https://federicogirella.github.io/">Federico Girella</a><sup>*2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/ziyue-liu-karin/">Ziyue Liu</a><sup>2,3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.dimi.univr.it/?ent=persona&id=218">Marco Cristani</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.danbgoldman.com">Yiming Wang</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Fondazione Bruno Kessler (FBK),</span>
+            <span class="author-block"><sup>2</sup>University of Verona,</span>
+            <span class="author-block"><sup>3</sup>Polytechnic of Turin</span></br>
+            <span class="author-block"><sup>*</sup><small>Equal Contribution</small></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/davidetalon/fashionact"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+          <div class="column is-centered">
+            <div class="column has-text-centered">
+              <span class="tag is-success is-primary is-large">🎉 Accepted @ CVPR 2025 🎉</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser.jpg" alt="Fashion-ACT teaser image."/>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Fashion-ACT</span> brings the representation of the abstract-oriented language found in fashion towards the concrete-oriented one
+         in the latent space of existing VLMs, improving downstream tasks performance.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Natural language goes beyond dryly describing visual content. 
+            It contains rich abstract concepts to express feeling, creativity and properties that cannot be directly perceived. 
+            Yet, current research in Vision Language Models (VLMs) has not shed light on abstract-oriented language. 
+          </p>
+          <p>
+            Our research breaks new ground by uncovering its wide presence and under-estimated value, with extensive analysis. 
+            Particularly, we focus our investigation on the fashion domain, a highly-representative field with abstract expressions. 
+            By analyzing recent large-scale multimodal fashion datasets, we find that abstract terms have a dominant presence, rivaling the concrete ones, providing novel information, and being useful in the retrieval task. 
+            However, a critical challenge emerges: current general-purpose or fashion-specific VLMs are pre-trained with databases that lack sufficient abstract words in their text corpora, thus hindering their ability to effectively represent abstract-oriented language. 
+          </p>
+          <p>
+            We propose a training-free and model-agnostic method, Abstract-to-Concrete Translator (ACT), to shift abstract representations towards well-represented concrete ones in the VLM latent space, using pre-trained models and existing multimodal databases. 
+            On the text-to-image retrieval task, despite being training-free, ACT outperforms the fine-tuned VLMs in both same- and cross-dataset settings, exhibiting its effectiveness with a strong generalization capability. 
+            Moreover, the improvement introduced by ACT is consistent with various VLMs, making it a plug-and-play solution.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{talon2025seeing,
+      title={Seeing the Abstract: Translating the Abstract Language for Vision Language Models},
+      author={Talon, Davide and Girella, Federico and Liu, Ziyue and Cristani, Marco and Wang, Yiming},
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+      year={2025}
+}
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      
+      <a class="icon-link" href="https://github.com/davidetalon/fashionact" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The website is based on the <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> source code.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
